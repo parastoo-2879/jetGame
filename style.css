@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+#sky {
+  width: 100%;
+  height: 500000000vh;
+  background-image: url(img/skyy.jpg);
+  -webkit-animation: skymove 300000s linear;
+          animation: skymove 300000s linear;
+  background-position: 0% 0%;
+}
+
+@-webkit-keyframes skymove {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes skymove {
+  to {
+    background-position: 100% 100%;
+  }
+}
+#jet {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#jet img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+span {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  background-image: url(img/stone.png);
+  background-size: cover;
+  position: absolute;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+@-webkit-keyframes stones {
+  to {
+    top: 4000px;
+  }
+}
+
+@keyframes stones {
+  to {
+    top: 4000px;
+  }
+}/*# sourceMappingURL=style.css.map */
